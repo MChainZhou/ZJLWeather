@@ -12,7 +12,6 @@
 		1816CD991E10BBE20057C2EF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1816CD981E10BBE20057C2EF /* ViewController.m */; };
 		1816CD9C1E10BBE20057C2EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1816CD9A1E10BBE20057C2EF /* Main.storyboard */; };
 		1816CD9E1E10BBE20057C2EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1816CD9D1E10BBE20057C2EF /* Assets.xcassets */; };
-		1816CDA11E10BBE20057C2EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1816CD9F1E10BBE20057C2EF /* LaunchScreen.storyboard */; };
 		1816CDAC1E10BBE20057C2EF /* ZJLWeatherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1816CDAB1E10BBE20057C2EF /* ZJLWeatherTests.m */; };
 		1816CDB71E10BBE20057C2EF /* ZJLWeatherUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1816CDB61E10BBE20057C2EF /* ZJLWeatherUITests.m */; };
 /* End PBXBuildFile section */
@@ -43,7 +42,6 @@
 		1816CD981E10BBE20057C2EF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1816CD9B1E10BBE20057C2EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1816CD9D1E10BBE20057C2EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1816CDA01E10BBE20057C2EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1816CDA21E10BBE20057C2EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1816CDA71E10BBE20057C2EF /* ZJLWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZJLWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1816CDAB1E10BBE20057C2EF /* ZJLWeatherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJLWeatherTests.m; sourceTree = "<group>"; };
@@ -107,7 +105,6 @@
 				1816CD981E10BBE20057C2EF /* ViewController.m */,
 				1816CD9A1E10BBE20057C2EF /* Main.storyboard */,
 				1816CD9D1E10BBE20057C2EF /* Assets.xcassets */,
-				1816CD9F1E10BBE20057C2EF /* LaunchScreen.storyboard */,
 				1816CDA21E10BBE20057C2EF /* Info.plist */,
 				1816CD911E10BBE20057C2EF /* Supporting Files */,
 			);
@@ -207,6 +204,7 @@
 				TargetAttributes = {
 					1816CD8D1E10BBE20057C2EF = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 3999UXF2GH;
 						ProvisioningStyle = Automatic;
 					};
 					1816CDA61E10BBE20057C2EF = {
@@ -246,7 +244,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1816CDA11E10BBE20057C2EF /* LaunchScreen.storyboard in Resources */,
 				1816CD9E1E10BBE20057C2EF /* Assets.xcassets in Resources */,
 				1816CD9C1E10BBE20057C2EF /* Main.storyboard in Resources */,
 			);
@@ -317,14 +314,6 @@
 				1816CD9B1E10BBE20057C2EF /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1816CD9F1E10BBE20057C2EF /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1816CDA01E10BBE20057C2EF /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -424,6 +413,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 3999UXF2GH;
 				INFOPLIST_FILE = ZJLWeather/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yingtao.ZJLWeather;
@@ -435,6 +426,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 3999UXF2GH;
 				INFOPLIST_FILE = ZJLWeather/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yingtao.ZJLWeather;
@@ -507,6 +500,7 @@
 				1816CDBD1E10BBE20057C2EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1816CDBE1E10BBE20057C2EF /* Build configuration list for PBXNativeTarget "ZJLWeatherTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +509,7 @@
 				1816CDC01E10BBE20057C2EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1816CDC11E10BBE20057C2EF /* Build configuration list for PBXNativeTarget "ZJLWeatherUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +518,7 @@
 				1816CDC31E10BBE20057C2EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
