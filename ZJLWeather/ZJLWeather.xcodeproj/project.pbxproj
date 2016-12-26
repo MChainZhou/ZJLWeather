@@ -38,6 +38,7 @@
 		1816CED71E10C9E70057C2EF /* GetWeatherData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1816CED51E10C9E70057C2EF /* GetWeatherData.m */; };
 		183A2DE41E1101B50009C678 /* Easing.c in Sources */ = {isa = PBXBuildFile; fileRef = 183A2DE01E1101B50009C678 /* Easing.c */; };
 		183A2DE51E1101B50009C678 /* YXEasing.m in Sources */ = {isa = PBXBuildFile; fileRef = 183A2DE31E1101B50009C678 /* YXEasing.m */; };
+		4CA731355901AE8C81A06C78 /* libPods-ZJLWeather.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3655DB611E3FA9EA28E2E130 /* libPods-ZJLWeather.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +119,9 @@
 		183A2DE11E1101B50009C678 /* Easing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Easing.h; sourceTree = "<group>"; };
 		183A2DE21E1101B50009C678 /* YXEasing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXEasing.h; sourceTree = "<group>"; };
 		183A2DE31E1101B50009C678 /* YXEasing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXEasing.m; sourceTree = "<group>"; };
+		3655DB611E3FA9EA28E2E130 /* libPods-ZJLWeather.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZJLWeather.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5F955D8DC1243E02EBAA560 /* Pods-ZJLWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJLWeather.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZJLWeather/Pods-ZJLWeather.release.xcconfig"; sourceTree = "<group>"; };
+		F601B60251ED1957EE7BA3B2 /* Pods-ZJLWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJLWeather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZJLWeather/Pods-ZJLWeather.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CA731355901AE8C81A06C78 /* libPods-ZJLWeather.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +157,8 @@
 				1816CDAA1E10BBE20057C2EF /* ZJLWeatherTests */,
 				1816CDB51E10BBE20057C2EF /* ZJLWeatherUITests */,
 				1816CD8F1E10BBE20057C2EF /* Products */,
+				CEDB51D90FE67FF7445E5B79 /* Pods */,
+				20E90A1DA69A153C823426CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -323,6 +330,23 @@
 			path = YXEasing;
 			sourceTree = "<group>";
 		};
+		20E90A1DA69A153C823426CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3655DB611E3FA9EA28E2E130 /* libPods-ZJLWeather.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEDB51D90FE67FF7445E5B79 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F601B60251ED1957EE7BA3B2 /* Pods-ZJLWeather.debug.xcconfig */,
+				E5F955D8DC1243E02EBAA560 /* Pods-ZJLWeather.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -330,9 +354,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1816CDBB1E10BBE20057C2EF /* Build configuration list for PBXNativeTarget "ZJLWeather" */;
 			buildPhases = (
+				F4D03742387F772C2015167C /* [CP] Check Pods Manifest.lock */,
 				1816CD8A1E10BBE20057C2EF /* Sources */,
 				1816CD8B1E10BBE20057C2EF /* Frameworks */,
 				1816CD8C1E10BBE20057C2EF /* Resources */,
+				DB9CA70047790EE23D783AEC /* [CP] Embed Pods Frameworks */,
+				D8F410FA415CADC14437FAD9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -456,6 +483,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D8F410FA415CADC14437FAD9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZJLWeather/Pods-ZJLWeather-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB9CA70047790EE23D783AEC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZJLWeather/Pods-ZJLWeather-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4D03742387F772C2015167C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1816CD8A1E10BBE20057C2EF /* Sources */ = {
@@ -621,6 +696,7 @@
 		};
 		1816CDBC1E10BBE20057C2EF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F601B60251ED1957EE7BA3B2 /* Pods-ZJLWeather.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -636,6 +712,7 @@
 		};
 		1816CDBD1E10BBE20057C2EF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5F955D8DC1243E02EBAA560 /* Pods-ZJLWeather.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
